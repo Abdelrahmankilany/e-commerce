@@ -1,0 +1,120 @@
+.Shop-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ShopCategory-banner {
+  display: block;
+  margin: 30px auto;
+  width: 82%;
+}
+
+.shopCategory-index {
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 70px;
+}
+
+.shopCategory-index p span {
+  font-weight: 600;
+
+}
+
+.shopCategory-sort {
+  padding: 10px 20px;
+  border: 1px solid #888;
+  border-radius: 40px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
+
+.shopcategory-products {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  row-gap: 80px;
+}
+
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto;
+  width: 230px;
+  height: 70px;
+  background-color: #ededed;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 75px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+  -ms-border-radius: 75px;
+  -o-border-radius: 75px;
+}
+
+@media (max-width:1280px) {
+  .ShopCategory-banner {
+    margin: 20px auto;
+    width: 90%;
+  }
+
+  .shopCategory-index {
+    width: 90%;
+    margin: auto;
+  }
+
+  .shopCategory-sort {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+
+  .shopCategory-index p {
+    font-size: 12px;
+  }
+
+  .shopcategory-products {
+    width: 90%;
+    margin: 10px auto;
+    row-gap: 40px;
+  }
+
+  .shopcategory-loadmore {
+    margin: 100px auto;
+    width: 200px;
+    height: 60px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width:800px) {
+  .ShopCategory-banner {
+    width: 95%;
+  }
+
+  .shopcategory-products {
+    width: 95%;
+  }
+
+  .shopcategory-loadmore {
+    margin: 60px auto;
+    width: 150px;
+    height: 40px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width:500px) {
+  .shopcategory-products {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+}
